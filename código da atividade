@@ -30,17 +30,18 @@ function calculadora(x, y, callback) {
 
 //3 questao
 
-function question3( valori, callabck) {
-return function (valor2) {
-callabck(valor1, valor2);
-};
+function varify(x, callback) {
+    return function verifyDeNovo(y) {
+        callback(x, y);
+    };
 }
-var v1 = question3(15), function (valor1, valor2)
-{
-console.log(valor1);
-console.log(valor2);
+
+var valores = verify(15, function (x, y) {
+    console.log(x);
+    console.log(y);
 });
-v1(9);
+
+valores(9);
 
 //4 questao
 
