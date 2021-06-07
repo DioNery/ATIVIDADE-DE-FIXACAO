@@ -28,6 +28,9 @@ function calculadora(x, y, callback) {
     console.log(callback(x, y));
 }
 
+calculadora(1, 7, soma) ;
+calculadora(12, 4, divisao);
+
 //3 questao
 
 function verify(x, callback) {
