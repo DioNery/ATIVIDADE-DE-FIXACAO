@@ -30,19 +30,17 @@ function calculadora(x, y, callback) {
 
 //3 questao
 
-function linguica(x, callback) {
-    return callback(x, y);
+function question3( valori, callabck) {
+return function (valor2) {
+callabck(valor1, valor2);
+};
 }
-
-var enche = linguica(15, function(x, y) {
-    if(x % y == 0){
-        return true;
-    } else {
-        return false;
-    }
+var v1 = question3(15), function (valor1, valor2)
+{
+console.log(valor1);
+console.log(valor2);
 });
-
-enche(15, 3);
+v1(9);
 
 //4 questao
 
