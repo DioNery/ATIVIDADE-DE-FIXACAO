@@ -30,18 +30,22 @@ function calculadora(x, y, callback) {
 
 //3 questao
 
-function varify(x, callback) {
+function verify(x, callback) {
     return function verifyDeNovo(y) {
         callback(x, y);
     };
 }
 
 var valores = verify(15, function (x, y) {
-    console.log(x);
-    console.log(y);
+    if(x % y == 0) {
+        return console.log(true);
+    } else{
+        return console.log(false);
+    } 
 });
 
-valores(9);
+valores(9); // false
+valores(3); // true
 
 //4 questao
 
